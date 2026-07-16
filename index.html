@@ -7,16 +7,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
 <style>
   :root {
-    --bg: #0a0f1e;
-    --surface: #111827;
-    --card: #161e2e;
-    --border: #1f2d45;
-    --accent: #38bdf8;
-    --accent2: #a78bfa;
-    --accent3: #34d399;
-    --text: #e2e8f0;
-    --muted: #94a3b8;
-    --pill-bg: #1e293b;
+    --bg: #fdf6f0;
+    --surface: #faf0eb;
+    --card: #fff8f5;
+    --border: #e8d5cc;
+    --accent: #c2748a;
+    --accent2: #a08080;
+    --accent3: #b07a80;
+    --text: #3a2e2e;
+    --muted: #8a7070;
+    --pill-bg: #f5e8e4;
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -44,7 +44,7 @@
     top: 0; left: 0; right: 0;
     z-index: 100;
     backdrop-filter: blur(16px);
-    background: rgba(10,15,30,0.8);
+    background: rgba(253,246,240,0.92);
     border-bottom: 1px solid var(--border);
     padding: 0 2rem;
     height: 56px;
@@ -117,8 +117,8 @@
     cursor: pointer;
     border: none;
   }
-  .btn-primary { background: var(--accent); color: #0a0f1e; }
-  .btn-primary:hover { background: #7dd3fc; }
+  .btn-primary { background: var(--accent); color: #fff8f5; }
+  .btn-primary:hover { background: #b06070; }
   .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text); }
   .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
@@ -159,7 +159,7 @@
     height: 220px;
     border-radius: 50%;
     padding: 4px;
-    background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
+    background: linear-gradient(135deg, #e8a0b0, #c8909a, #d4b0b8);
   }
   .headshot-placeholder {
     width: 100%;
@@ -275,8 +275,8 @@
     margin-bottom: 0.8rem;
     letter-spacing: 0.05em;
   }
-  .badge-gold { background: rgba(251,191,36,0.15); color: #fbbf24; }
-  .badge-silver { background: rgba(167,139,250,0.15); color: var(--accent2); }
+  .badge-gold { background: rgba(192,140,100,0.15); color: #b08050; }
+  .badge-silver { background: rgba(180,140,140,0.15); color: #906060; }
   .hack-name { font-weight: 700; font-size: 1rem; margin-bottom: 0.5rem; }
   .hack-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
   .hack-event { font-size: 0.75rem; color: var(--muted); margin-top: 0.75rem; font-family: 'Space Mono', monospace; }
@@ -364,8 +364,8 @@
 
   /* EMOJI ACCENT */
   .fun-note {
-    background: rgba(167,139,250,0.08);
-    border: 1px solid rgba(167,139,250,0.2);
+    background: rgba(194,116,138,0.07);
+    border: 1px solid rgba(194,116,138,0.25);
     border-radius: 10px;
     padding: 0.8rem 1.2rem;
     font-size: 0.85rem;
@@ -439,7 +439,7 @@
   .photo-slot .photo-label {
     position: absolute;
     bottom: 0; left: 0; right: 0;
-    background: linear-gradient(to top, rgba(10,15,30,0.9), transparent);
+    background: linear-gradient(to top, rgba(253,246,240,0.95), transparent);
     padding: 1rem 0.75rem 0.75rem;
     font-size: 0.78rem;
     color: var(--text);
@@ -459,7 +459,7 @@
 
 <!-- DNA decoration SVG -->
 <svg class="dna-bg" viewBox="0 0 100 800" xmlns="http://www.w3.org/2000/svg">
-  <g stroke="#38bdf8" stroke-width="1.5" fill="none">
+  <g stroke="#d4a0aa" stroke-width="1.5" fill="none">
     <path d="M20,0 Q80,50 20,100 Q80,150 20,200 Q80,250 20,300 Q80,350 20,400 Q80,450 20,500 Q80,550 20,600 Q80,650 20,700 Q80,750 20,800"/>
     <path d="M80,0 Q20,50 80,100 Q20,150 80,200 Q20,250 80,300 Q20,350 80,400 Q20,450 80,500 Q20,550 80,600 Q20,650 80,700 Q20,750 80,800"/>
     <line x1="20" y1="25" x2="80" y2="75"/><line x1="80" y1="25" x2="20" y2="75"/>
@@ -599,7 +599,7 @@
       </div>
 
       <div class="hack-card">
-        <span class="hack-badge" style="background:rgba(251,191,36,0.15);color:#fbbf24">🏅 Broadie's Choice Award</span>
+        <span class="hack-badge" style="background:rgba(192,140,100,0.15);color:#b08050">🏅 Broadie's Choice Award</span>
         <div class="hack-name">Lab Inventory AI</div>
         <div class="hack-desc">Developed an agentic lab inventory management system that uses ML vision and AI to automate tracking and management of laboratory supplies.</div>
         <div class="hack-event">BroadHacks 2026 · Broad Institute of MIT and Harvard · June 2026</div>
