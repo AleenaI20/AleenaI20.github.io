@@ -71,7 +71,8 @@
 
   main { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 1; }
 
-  /* STATS ROW */
+  /* HERO EYEBROW */
+  .hero-eyebrow {
     font-family: 'Space Mono', monospace;
     font-size: 0.75rem;
     color: var(--accent3);
@@ -475,12 +476,15 @@
 
 <nav>
   <span class="nav-logo">aleena.bio</span>
-  <ul class="nav-links">
+    <ul class="nav-links">
     <li><a href="#about">about</a></li>
     <li><a href="#experience">experience</a></li>
     <li><a href="#projects">projects</a></li>
+    <li><a href="#hackathons">hackathons</a></li>
+    <li><a href="#achievements">achievements</a></li>
     <li><a href="#publications">papers</a></li>
     <li><a href="#skills">skills</a></li>
+    <li><a href="#graph">graph</a></li>
     <li><a href="#beyond">beyond</a></li>
   </ul>
 </nav>
@@ -495,7 +499,7 @@
         <h1>Hi, I'm<br><span class="name-accent">Aleena Iraqui</span> 👋</h1>
         <p class="hero-journey">🌏 Bombay → Boston</p>
         <p class="hero-sub">
-          MS Bioinformatics student at Northeastern University. I bridge wet lab biochemistry with computational pipelines to tackle genomic, structural, and clinical problems. Currently working at the Broad Institute of MIT and Harvard.
+          I am a Master's in Bioinformatics student and Zanghi-Dow fellow at Northeastern University hoping to bridge wet lab biochemistry with computational pipelines to tackle genomic, structural, and clinical problems. I spent Summer 2026 at the Broad Institute of MIT and Harvard with ML4H group emulating RCT of metformin for dementia prevention. Currently working as a Grdauate Research Assistant in Loring Lab, Dept. of Pharmaceutical Sciences at Northeastern University. 
         </p>
         <div class="hero-tags">
           <span class="tag hot">@ Broad Institute</span>
@@ -509,7 +513,6 @@
           <a href="https://www.linkedin.com/in/aleena-iraqui" target="_blank" class="btn btn-primary">LinkedIn</a>
           <a href="https://github.com/AleenaI20" target="_blank" class="btn btn-outline">GitHub</a>
         </div>
-        <div class="fun-note">🏆 hackathon winner · 2 preprints · 1 very chaotic GitHub</div>
       </div>
       <div class="hero-headshot">
         <div class="headshot-ring">
@@ -521,7 +524,7 @@
 
 
 
-  <!-- EXPERIENCE -->
+    <!-- EXPERIENCE -->
   <section id="experience">
     <div class="section-eyebrow">where I've been</div>
     <h2 class="section-title">Experience</h2>
@@ -529,23 +532,26 @@
 
       <div class="exp-card">
         <div class="exp-header">
-          <span class="exp-role">Visiting Graduate Student</span>
-          <span class="exp-date">May 2026 – Present</span>
+          <span class="exp-role">Graduate Research Assistant</span>
+          <span class="exp-date">Jan 2026 – Present</span>
         </div>
-        <div class="exp-org">Machine Learning for Health (ML4H) Group · Broad Institute of MIT and Harvard, Cambridge MA</div>
+        <div class="exp-org">Loring Lab · Northeastern University, Bouvé College of Health Sciences, Boston MA</div>
         <ul class="exp-bullets">
-          <li>Applying causal inference methods (IPTW, competing risks, Cox models) to emulate a clinical trial on dementia onset using electronic health records</li>
+          <li>Studying the C-terminal of nicotinic acetylcholine receptors (nAChR) and chaperone proteins</li>
+          <li>Built a Python pipeline for cross-database ID resolution (UniProt, Ensembl, NCBI) and performed MSA and phylogenetic analysis to study receptor conservation across species</li>
+          <li>Performing cell transfection and binding assays to study chaperone effects on chimeric α7 receptor expression</li>
         </ul>
       </div>
 
       <div class="exp-card">
         <div class="exp-header">
-          <span class="exp-role">Graduate Research Assistant</span>
-          <span class="exp-date">Jan 2026 – Present</span>
+          <span class="exp-role">Graduate Intern / Visiting Graduate Student</span>
+          <span class="exp-date">May 2026 – Aug 2026</span>
         </div>
-        <div class="exp-org">Loring Lab · Northeastern University, Bouvé College of Health Sciences</div>
+        <div class="exp-org">Machine Learning for Health (ML4H) Group · Broad Institute of MIT and Harvard, Cambridge MA</div>
         <ul class="exp-bullets">
-          <li>Studying the C-terminal of α7 nicotinic acetylcholine receptors and chaperone proteins using combined computational and experimental approaches</li>
+          <li>Built and refined patient cohorts from NIH All of Us EHR data, defining treatment arms, baseline comorbidities, follow-up windows, and clinical outcomes</li>
+          <li>Applied causal inference and survival analysis to study metformin use and dementia onset</li>
         </ul>
       </div>
 
@@ -566,7 +572,7 @@
       <div class="exp-card">
         <div class="exp-header">
           <span class="exp-role">Intern, Department of Biochemistry</span>
-          <span class="exp-date">May 2023</span>
+          <span class="exp-date">May 2023 – May 2023</span>
         </div>
         <div class="exp-org">Tata Memorial Hospital · Mumbai, India</div>
         <ul class="exp-bullets">
@@ -578,24 +584,40 @@
     </div>
   </section>
 
-  <!-- PROJECTS & HACKATHONS -->
+    <!-- PROJECTS -->
   <section id="projects">
     <div class="section-eyebrow">things I've built</div>
-    <h2 class="section-title">Projects and Hackathons</h2>
+    <h2 class="section-title">Projects</h2>
     <div class="hack-grid">
 
       <div class="hack-card">
-        <span class="hack-badge badge-gold">🥇 1st Place</span>
-        <div class="hack-name">FoldForward</div>
-        <div class="hack-desc">An agentic AI pipeline that converts scientific hypotheses into fully validated, execution-ready wet lab experiment plans. Compressed weeks of experiment planning into minutes using ESMFold for 3D structure prediction with pLDDT-based confidence scoring.</div>
-        <div class="hack-event">5th Hack-Nation Global AI Hackathon · April 2026</div>
+        <span class="hack-badge badge-gold">🎓 Zanghi-Dow Fellow</span>
+        <div class="hack-name">Targeting hTERT-Mediated Telomerase Reactivation in Cancer</div>
+        <div class="hack-desc">Curated hTERT inhibitors from ChEMBL and benchmarked 15 model and feature combinations in RDKit and scikit-learn using Morgan fingerprints and physicochemical descriptors. Built and validated an AutoDock Vina docking pipeline on an HPC cluster using conda and SLURM. MDS and an analog design loop are planned next.</div>
+        <div class="hack-event">Jul 2026 – Present · Boston, MA</div>
       </div>
 
       <div class="hack-card">
-        <span class="hack-badge badge-gold">🥇 Winner</span>
-        <div class="hack-name">Variant Pipeline</div>
-        <div class="hack-desc">Multi-stage variant filtering pipeline (QC, population frequency, functional impact) that identified 1 pathogenic SCN1A variant from 750,000 candidates in the 1000 Genomes Project, establishing a Dravet Syndrome diagnosis via ClinVar, gnomAD, and OMIM.</div>
-        <div class="hack-event">GBBA BioHack 2026 · January 2026</div>
+        <span class="hack-badge badge-silver">🔬 Research Project</span>
+        <div class="hack-name">PRIM-seq Pipeline</div>
+        <div class="hack-desc">Genome-wide RNA-protein interaction mapping via PRIM-seq on an HPC cluster using conda and SLURM. Full pipeline: QC (cutadapt, fastp), alignment (BWA), chimeric read ID (SAMtools, BEDtools), with Chi-square/FDR validation.</div>
+        <div class="hack-event">Oct 2025 – Dec 2025 · Boston, MA</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HACKATHONS -->
+  <section id="hackathons">
+    <div class="section-eyebrow">built against the clock</div>
+    <h2 class="section-title">Hackathons</h2>
+    <div class="hack-grid">
+
+      <div class="hack-card">
+        <span class="hack-badge badge-gold">🥇 Winner · NVIDIA BioNeMo</span>
+        <div class="hack-name">Telomerase Inhibitor Agent Collective</div>
+        <div class="hack-desc">Built a six-agent collective that tests telomerase inhibitor candidates against multiple human binding sites.</div>
+        <div class="hack-event">ScienceClaw Hackathon · MIT · November 2026 · Team Lead</div>
       </div>
 
       <div class="hack-card">
@@ -606,6 +628,20 @@
       </div>
 
       <div class="hack-card">
+        <span class="hack-badge badge-gold">🥇 1st Place</span>
+        <div class="hack-name">FoldForward</div>
+        <div class="hack-desc">An agentic AI pipeline that converts scientific hypotheses into wet lab experiment plans. Built the structural analysis agent using ESMFold for 3D structure prediction with pLDDT-based confidence scoring.</div>
+        <div class="hack-event">5th Hack-Nation Global AI Hackathon · MIT · April 2026 · Team Member</div>
+      </div>
+
+      <div class="hack-card">
+        <span class="hack-badge badge-gold">🥇 Winner</span>
+        <div class="hack-name">Variant Pipeline</div>
+        <div class="hack-desc">Multi-stage variant filtering pipeline (QC, population frequency, functional impact) that identified 1 pathogenic SCN1A variant from 750,000 candidates in the 1000 Genomes Project, consistent with Dravet syndrome, via ClinVar, gnomAD, and OMIM.</div>
+        <div class="hack-event">GBBA BioHack 2026 · Northeastern University · January 2026 · Team Lead</div>
+      </div>
+
+      <div class="hack-card">
         <span class="hack-badge badge-silver">🏅 Top 5 Finalist</span>
         <div class="hack-name">GenoInsight</div>
         <div class="hack-desc">An AI platform linking genomic variant discovery to clinical action. Built three integrated modules: AI Variant Hunter, Clinical Translation Engine, and Patient Dashboard. Reduced variant interpretation time from days to minutes.</div>
@@ -613,31 +649,63 @@
       </div>
 
       <div class="hack-card">
-        <span class="hack-badge" style="background:rgba(56,189,248,0.12);color:var(--accent)">🧪 Drug Discovery</span>
+        <span class="hack-badge" style="background:rgba(160,128,128,0.15);color:#906060">🧪 Drug Discovery</span>
         <div class="hack-name">FoldForward: AI Drug Discovery Pipeline</div>
         <div class="hack-desc">Led a GPU-accelerated AI pipeline for Alzheimer's drug discovery, integrating ESMFold, Boltz-2, and AutoDock Vina. Identified Tropisetron as a drug repurposing candidate targeting α7 nAChR.</div>
+        <!-- add the month and year here -->
         <div class="hack-event">Sundai Club Hackathon</div>
-      </div>
-
-      <div class="hack-card">
-        <span class="hack-badge" style="background:rgba(56,189,248,0.12);color:var(--accent)">🔬 Research Project</span>
-        <div class="hack-name">PRIM-seq Pipeline</div>
-        <div class="hack-desc">Genome-wide RNA-protein interaction mapping via PRIM-seq on HPC cluster using SLURM. Full pipeline: QC (cutadapt, fastp), alignment (BWA), chimeric read ID (SAMtools, BEDtools), with Chi-square/FDR validation.</div>
-        <div class="hack-event">Oct 2025 – Dec 2025 · Boston, MA</div>
       </div>
 
     </div>
   </section>
 
-  <!-- PUBLICATIONS -->
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="section-eyebrow">highlights</div>
+    <h2 class="section-title">Achievements</h2>
+    <div class="hack-grid">
+
+      <div class="hack-card">
+        <span class="hack-badge badge-gold">🎓 Fellowship</span>
+        <div class="hack-name">Zanghi-Dow Fellowship</div>
+        <div class="hack-desc">Awarded for pursuing independent research and applying mathematics to the bioinformatics field.</div>
+        <div class="hack-event">Northeastern University College of Science · September 2026</div>
+      </div>
+
+      <div class="hack-card">
+        <span class="hack-badge badge-gold">🎓 Scholarship</span>
+        <div class="hack-name">International Impact Award</div>
+        <div class="hack-event">Northeastern University · September 2025</div>
+      </div>
+
+      <div class="hack-card">
+        <span class="hack-badge badge-gold">🏆 Hackathons</span>
+        <div class="hack-name">3 wins, 1 award, 1 top-5 finish</div>
+        <div class="hack-desc">NVIDIA BioNeMo (ScienceClaw), 1st place at Hack-Nation, GBBA BioHack winner, Broadie's Choice Award at BroadHacks, and Top 5 at Convergence.</div>
+        <div class="hack-event">January – November 2026</div>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- PUBLICATIONS -->
   <section id="publications">
     <div class="section-eyebrow">peer review incoming</div>
-    <h2 class="section-title">Publications (Preprints)</h2>
+    <h2 class="section-title">Publications and Posters</h2>
     <div class="pub-list">
 
       <div class="pub-card">
+        <div class="pub-title">Target Trial Emulation of Metformin for Dementia Prevention in All of Us: Robustness to Cohort and Confounder Definitions</div>
+        <div class="pub-venue">medRxiv · 2026 · Co-first author · Under review</div>
+        <!-- add a link here when you have one:
+        <a class="pub-link" href="https://doi.org/10.64898/2026.11.02.26367055" target="_blank">
+          View preprint →
+        </a>
+      </div>
+
+      <div class="pub-card">
         <div class="pub-title">Hemispheric Asymmetry Features and Interpretable Machine Learning for Focal Cortical Dysplasia Classification in Drug-Resistant Epilepsy</div>
-        <div class="pub-venue">medRxiv · July 2026</div>
+        <div class="pub-venue">medRxiv · July 2026 · Under review</div>
         <a class="pub-link" href="https://www.medrxiv.org/content/10.64898/2026.07.02.26357180v1" target="_blank">
           View preprint →
         </a>
@@ -645,15 +713,39 @@
 
       <div class="pub-card">
         <div class="pub-title">A Machine Learning QSAR Model for Predicting hTERT Telomerase Inhibitor Potency: ChEMBL Dataset Curation, Algorithm Benchmarking, and Prospective Application to Natural and Synthetic Anticancer Compounds</div>
-        <div class="pub-venue">ChemRxiv · July 2026</div>
+        <div class="pub-venue">ChemRxiv · July 2026 · First author · Under review</div>
         <a class="pub-link" href="https://chemrxiv.org/doi/abs/10.26434/chemrxiv.15005669/v2" target="_blank">
           View preprint →
         </a>
       </div>
 
     </div>
-  </section>
 
+    <h3 class="section-title" style="font-size:1.25rem;margin:3rem 0 1.5rem">Poster presentations</h3>
+    <div class="pub-list">
+
+      <div class="pub-card">
+        <div class="pub-title">Target trial emulation of metformin for dementia prevention in All of Us: Robustness to cohort and confounder definitions</div>
+        <div class="pub-venue">Machine Learning for Health (ML4H) Symposium · Sydney, Australia · December 2026</div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-title">Effects of NACHO and C-terminal M4 regions across species and subunits on chimeric α7 nicotinic receptor expression</div>
+        <div class="pub-venue">Society for Neuroscience (SfN) Neuroscience 2026 · Washington, DC · November 2026</div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-title">Conservation of the human α7 SAP motif across species and nicotinic receptor subunits</div>
+        <div class="pub-venue">HELIX Initiative's Berkowitz Distinguished Seminar · Boston, MA · August 2026</div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-title">Conservation of the human α7 SAP motif across species and nicotinic receptor subunits</div>
+        <div class="pub-venue">11th Annual Chemistry and Pharmacology of Drug Abuse (CPDA) Conference · Boston, MA · July 2026</div>
+      </div>  
+
+    </div>
+  </section>
   <!-- SKILLS -->
   <section id="skills">
     <div class="section-eyebrow">the toolkit</div>
@@ -710,7 +802,7 @@
     </div>
   </section>
 
-  <!-- EDUCATION -->
+    <!-- EDUCATION -->
   <section id="education">
     <div class="section-eyebrow">the credentials</div>
     <h2 class="section-title">Education</h2>
@@ -720,13 +812,15 @@
         <div class="edu-degree">MS in Bioinformatics</div>
         <div class="edu-school">Northeastern University · Boston, MA</div>
         <div style="font-size:0.75rem;color:var(--muted);font-family:'Space Mono',monospace;margin-bottom:0.3rem;margin-top:0.5rem;">Sep 2025 – May 2027 (Expected)</div>
-        <div class="edu-courses">Bioinformatics Programming · Computational Methods in Bioinformatics · Statistics for Bioinformatics · Genomics in Bioinformatics</div>
+        <div class="edu-gpa">GPA 4.00 / 4.00</div>
+        <div class="edu-courses">Bioinformatics Programming · Computational Methods in Bioinformatics · Statistics for Bioinformatics · Genomics in Bioinformatics · Data Mining and Machine Learning</div>
       </div>
 
       <div class="edu-card">
         <div class="edu-degree">BS in Biochemistry</div>
         <div class="edu-school">Ramnarain Ruia Autonomous College, University of Mumbai · India</div>
         <div style="font-size:0.75rem;color:var(--muted);font-family:'Space Mono',monospace;margin-bottom:0.3rem;margin-top:0.5rem;">Aug 2022 – April 2025</div>
+        <div class="edu-gpa">GPA 3.97 / 4.00</div>
         <div class="edu-courses">Biostatistics and Bioinformatics · Molecular Biology · Pharmacology and Immunology · Membrane Biochemistry and Cancer Biology</div>
       </div>
 
@@ -744,21 +838,21 @@
       <div class="fun-fact-card">
         <span class="fun-fact-emoji">🎭</span>
         <div class="fun-fact-title">Actor</div>
-        <div class="fun-fact-desc">Won 3rd place at Inter-Collegiate Monoacting and took home Best Actor at Inter-House Dramatics 2018. Turns out standing in front of a crowd and pretending is a useful skill for conference talks.</div>
+        <div class="fun-fact-desc">Won 3rd place at Inter-Collegiate Monoacting and took home Best Actor at Inter-House Dramatics 2018. Turns out standing in front of a crowd and pretending is a useful skill for conference talks and general larping.</div>
         <span class="fun-fact-badge">award winning</span>
       </div>
 
       <div class="fun-fact-card">
         <span class="fun-fact-emoji">🛼</span>
         <div class="fun-fact-title">State-Level Roller Skater</div>
-        <div class="fun-fact-desc">Competed at the state level in roller skating. Yes, the same person running genome-wide pipelines used to zoom around on eight wheels competitively.</div>
+        <div class="fun-fact-desc">Competed at the state level in roller skating. Yes, I used to zoom around on eight wheels competitively.</div>
         <span class="fun-fact-badge">state level</span>
       </div>
 
       <div class="fun-fact-card">
         <span class="fun-fact-emoji">🧮</span>
         <div class="fun-fact-title">Abacus Champion</div>
-        <div class="fun-fact-desc">Won prizes at state and national levels for abacus. Doing mental arithmetic faster than most people can open a calculator app was the original bioinformatics training, honestly.</div>
+        <div class="fun-fact-desc">Won prizes at state and national levels for abacus. Doing mental arithmetic faster than most people can open a calculator app makes me the OG AI (my initials are AI!).</div>
         <span class="fun-fact-badge">national level</span>
       </div>
 
